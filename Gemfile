@@ -11,6 +11,8 @@ gem 'rails', '~> 5.1.3'
 gem 'sqlite3'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
+# Use figaro
+gem 'figaro'
 # use twitter
 gem 'twitter', '6.1.0'
 # Use SCSS for stylesheets

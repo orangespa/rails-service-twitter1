@@ -21,10 +21,10 @@ class SendTweet
   private
     def user_setup
       @client = Twitter::REST::Client.new do |config|
-      config.consumer_key  = "Wa48QZDndhbSlaWIUDDfhZuSJ"
-      config.consumer_secret = "xK1mfkakqAPDSUXkDHKwAWAm4Btw0zpXJHc812nrhDy1OXgv2S"
-      config.access_token = "587344191-YfIhVS4pZjPqmaXPhxsYrUbuXah2UM27Mm24lpJz"
-      config.access_token_secret = "vQUcrlgCk9Lu5rN0NmrHERTutF5IuF0YGjjTgPPgT5DM4"     
+      config.consumer_key  = ENV['TWITTER_CONSUMER_KEY']
+      config.consumer_secret = ENV['TWITTER_CONSUMER_SECRET']
+      config.access_token = ENV['TWITTER_ACCESS_TOKEN']
+      config.access_token_secret = ENV['TWITTER_ACCESS_TOKEN_SECRET']
       end
     end
 

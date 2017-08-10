@@ -1,0 +1,4 @@
+<%=form_tag({:controller => "home", action:"index"}, method: :get) do %>
+  <%= text_field_tag :tweet%>
+  <%= submit_tag 'tweet it please', class: "btn btn-primary" %>
+    <% end %>
